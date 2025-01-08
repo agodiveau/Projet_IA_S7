@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 import cv2
-from composants_connexes import extract_components, load_luminaire_features  # Importer les fonctions du fichier composants_connexes
+from composants_connexes_plans import extract_components, load_luminaire_features  # Importer les fonctions du fichier composants_connexes
 
 K = 3
 SIMILARITY_THRESHOLD = 500  # Seuil de similarité (distance maximale) pour valider un luminaire

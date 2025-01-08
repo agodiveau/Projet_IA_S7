@@ -1,0 +1,5 @@
+1. Installer Python et les bibliothèques OpenCV, TensorFlow, Pandas et Numpy
+
+2. Exécuter le fichier de la méthode qu'on souhaite utiliser. Par exemple, si on souhaite utilise le k-ppv sur les plans, lancer "kppv_plans.py" dans le dossier scripts
+
+3. En sortie, le code donne l'image initiale annotée. Cette image se trouve dans le dossier Code/output
