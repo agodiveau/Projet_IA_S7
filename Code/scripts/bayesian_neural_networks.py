@@ -1,8 +1,7 @@
 import numpy as np
 import tensorflow as tf
 import cv2
-from Composants_connexes import extract_components, load_luminaire_features  # Importer les fonctions du fichier composants_connexes
-from kppv import knn_classification
+from kppv import knn_classification, extract_components, load_luminaire_features
 
 def get_number_classes(luminaire_features) :
     return len(luminaire_features)
@@ -69,13 +68,13 @@ proba_Xi_and_Cj = [[0]*len(luminaire_features[0]) for i in range(len(luminaire_f
 
 seuils = [0.4, 0.1, 0.5, 0.07, 0.07, 0.0001]
 
-for i in range(len(components)) :
+"""for i in range(len(components)) :
     class_index = get_class_index(labels_kppv[i])
 
     for j in range(len(components[i])) :
         if (components[i][j] < seuils[j]) and (class_index != None) :
             proba_Xi_and_Cj[class_index][j] += 1
 
-print("P(Xi et Cj) =", proba_Xi_and_Cj)
+print("P(Xi et Cj) =", proba_Xi_and_Cj)"""
 
 
